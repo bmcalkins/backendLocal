@@ -29,15 +29,15 @@ def is_logged_in?
       }
     end
 end
-def destroy
+  def destroy
       logout!
       render json: {
         status: 200,
         logged_out: true
       }
-end
+  end
 private
 def session_params
       params.require(:user).permit(:username, :password)
-end
+  end
 end
