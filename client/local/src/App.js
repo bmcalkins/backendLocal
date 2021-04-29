@@ -46,7 +46,9 @@ handleLogout = () => {
             <Route exact path='/signup' component={}/>
           </Switch>
         </BrowserRouter>
+        <div Home data={this.state.isLoggedIn}></div>
       </div>
+      
     );
   }
 }
