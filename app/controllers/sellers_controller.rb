@@ -11,7 +11,7 @@ class SellersController < ApplicationController
         )
         if seller.save
             session[:user_id] = user.id
-            flash[:success] = "Succesfully Created User"
+            flash[:success] = "Succesfully Created Seller"
             redirect_to '/listings'
         else
             flash[:warning] = "Invalid Email or Password"
@@ -19,4 +19,4 @@ class SellersController < ApplicationController
         end 
     end
 end
-end
+
